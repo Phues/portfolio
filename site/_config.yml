@@ -28,6 +28,8 @@ collections:
     permalink: /project/:slug
   testimonials:
     output: false
+  education:
+    output: false
   posts:
     output: true
     permalink: /blog/:slug
