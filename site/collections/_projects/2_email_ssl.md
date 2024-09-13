@@ -3,12 +3,21 @@ title: Spam email classification
 subtitle: Machine Learning
 image: '/images/project-8.jpg'
 ---
-In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem.
 
-![Palm trees](/images/image-example-3.jpg){: width="1200" height="900"}
+# Spam detection using Semi-supervised Machine Learning
 
-Praeteritis, inquit, gaudeo. Praeteritis, inquit, gaudeo. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. Scientiam pollicentur, quam non erat mirum sapientiae cupido patria esse cariorem. Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Ita ne hoc quidem modo paria peccata sunt. Ita prorsus, inquam; Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis.
+## Overview
 
-![Sea](/images/image-example-4.jpg){: width="1200" height="900"}
+In the course of this project, we explored Natural Language Processing (NLP) to achieve reliable predictions. Our approach involved text preprocessing on the training data, along with feature extraction techniques such as the Bag of Words and Term Frequency-Inverse Document Frequency (TF-IDF).
 
-Defecerit Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes; Quod enim dissolutum sit, id esse sine sensu, quod autem sine sensu. Sunt omnia Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles servari.
+To address the challenge of limited labeled data, we used semi-supervised learning, where we applied three different algorithms: Self-Learning, Label Spreading and Label Propagation.
+
+For more details please refere to : [Report](https://github.com/Devnetly/email-spam-classification/blob/main/docs/Email_Classification_SSL_Report.pdf).
+
+## Technologies used
+
+Scikit, NLTK, FastAPI, Streamlit, Vite
+
+## Role
+
+My Role in this project was training Label Propagation and Label Spreading models and comparing them, furthermore I also deployed the best model using streamlit.

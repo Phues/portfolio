@@ -3,12 +3,15 @@ title: NierAutomata Arcade
 subtitle: Game
 image: '/images/project-7.jpg'
 ---
-In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem.
 
-![Palm trees](/images/image-example-3.jpg){: width="1200" height="900"}
+# Arcade mini-game from NierAutomata remade from scratch using Unity
 
-Praeteritis, inquit, gaudeo. Praeteritis, inquit, gaudeo. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. Scientiam pollicentur, quam non erat mirum sapientiae cupido patria esse cariorem. Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Ita ne hoc quidem modo paria peccata sunt. Ita prorsus, inquam; Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis.
+In this project I tried to replicate the hacking mini-game in the famous game NierAutomata using the Unity game engine
 
-![Sea](/images/image-example-4.jpg){: width="1200" height="900"}
+I built everything from scratch, I created a simple cursor 3D model using Blender, exported it to unity, created enemies and created movement and shooting logic for them and replicated the VFX using unity's particle system and shader graph. The game was also used as CTF challenge for the AlphaCTF club event where players had to hack the time to win.
 
-Defecerit Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes; Quod enim dissolutum sit, id esse sine sensu, quod autem sine sensu. Sunt omnia Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles servari.
+![CD](/images/cd.png)
+
+You can see the full project here:  [Github](https://github.com/Phues/NierAutomataArcade)
+
+![screenshot](/images/nier.jpg)
