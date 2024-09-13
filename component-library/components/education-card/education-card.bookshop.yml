@@ -1,0 +1,28 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures: []
+  label: Education Card
+  description: Education card used for displaying course or degree information
+  icon: school
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  education-item:
+    school_name: ""
+    school_logo: ""
+    course_name: ""
+    duration: ""
+    description: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  education-item:
+    school_name: Example University
+    school_logo: https://placekitten.com/200/200
+    course_name: Computer Science
+    duration: "2020 - 2024"
+    description: "A comprehensive program covering various aspects of computer science including algorithms, data structures, and software engineering."
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

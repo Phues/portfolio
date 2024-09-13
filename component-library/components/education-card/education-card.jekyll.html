@@ -1,0 +1,29 @@
+{% assign c = "c-education-card" %}
+
+<div class="{{c}}">
+  <div class="{{c}}__content">
+    <div class="{{c}}__school-meta">
+      {% if include.education-item.school_logo %}
+        <div class="{{c}}__logo-container">
+          <img src="{{ include.education-item.school_logo }}" alt="{{ include.education-item.school_name }}" class="{{c}}__school-logo">
+        </div>
+      {% endif %}
+
+      <div class="{{c}}__school-info">
+        {% if include.education-item.school_name %}
+          <h3 class="{{c}}__school-name">{{ include.education-item.school_name }}</h3>
+        {% endif %}
+        {% if include.education-item.course_name %}
+          <h4 class="{{c}}__course-name">{{ include.education-item.course_name }}</h4>
+        {% endif %}
+        {% if include.education-item.duration %}
+          <p class="{{c}}__duration">{{ include.education-item.duration }}</p>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if include.education-item.description %}
+      <p class="{{c}}__course-description">{{ include.education-item.description }}</p>
+    {% endif %}
+  </div>
+</div>

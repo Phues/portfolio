@@ -1,0 +1,24 @@
+<section class="section education animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <div class="section__head">
+            <h2 id="{{ include.title | slugify }}" class="section__title">{{ include.title }}</h2>
+          </div>
+          <div class="section__description">
+            {{ include.description_html }}
+          </div>
+        </div>
+
+        {% if include.show_education %}
+        <div class="education__slider my-slider">
+          {% for education-item in site.education %}
+            {% bookshop education-card education-item=education-item %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
