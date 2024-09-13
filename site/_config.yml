@@ -28,7 +28,7 @@ collections:
     permalink: /project/:slug
   testimonials:
     output: false
-  education:
+  educations:
     output: false
   posts:
     output: true
