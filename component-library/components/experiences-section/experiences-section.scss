@@ -1,10 +1,3 @@
-/* Experience Section */
-.experiences__list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px; // This will create space between child elements
-}
-
 .experience-item {
   .experience-content {
     width: 100%;
@@ -32,7 +25,7 @@
       position: relative;
       width: 80px;
       height: 80px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       border-radius: 50%;
       overflow: hidden;
       box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
@@ -76,35 +69,78 @@
   }
 }
 
-// Remove slider-related styles
-.experiences__slider,
-.tns-horizontal.tns-subpixel > .tns-item,
-.tns-outer,
-.controls {
-  display: none;
+.experiences__slider {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-// Responsive adjustments
-@media (max-width: 767px) {
-  .experiences__list {
-    gap: 16px; // Smaller gap on mobile devices
-  }
+.tns-horizontal.tns-subpixel > .tns-item {
+  display: inline-flex;
+}
 
-  .experience-item {
-    .experience-content {
-      padding: 24px;
+.tns-outer {
+  position: relative;
+}
 
-      .company-name {
-        font-size: 18px;
-      }
+.controls {
+  display: flex;
+  align-items: center;
+  outline: none;
 
-      .job-title {
-        font-size: 16px;
-      }
+  .prev,
+  .next {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.07);
+    color: $text-color;
+    background: $background-color-alt;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s ease;
 
-      .job-description {
-        font-size: 14px;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      overflow: hidden;
+      background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+      transition: all .2s ease;
+    }
+
+    &:hover {
+      color: $white;
+      background: transparent;
+
+      &::after {
+        opacity: 1;
+        visibility: visible;
       }
     }
+
+    &:active {
+      transform: scale(0.97) translateY(1px);
+    }
+  }
+
+  .prev {
+    margin-right: 4px;
   }
 }

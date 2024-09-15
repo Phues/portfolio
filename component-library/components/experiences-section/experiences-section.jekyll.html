@@ -1,4 +1,4 @@
-<div class="section experiences animate">
+<section class="section experiences animate">
     <div class="container">
       <div class="row">
         <div class="col col-12">
@@ -12,17 +12,13 @@
           </div>
   
           {% if include.show_experiences %}
-            <div class="experiences__list">
+            <div class="experiences__slider my-slider">
               {% for experience-item in site.experiences %}
-                <div class="experience-item">
                   {% bookshop work-card experience-item=experience-item %}
-                </div>
               {% endfor %}
             </div>
-          {% else %}
-            <p>Experiences are not shown (show_experiences is false)</p>
           {% endif %}
         </div>
       </div>
     </div>
-  </div>
+  </section>

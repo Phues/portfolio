@@ -1,9 +1,8 @@
-# Metadata about this component, to be used in the CMS
 spec:
   structures:
     - content_blocks
   label: Experiences
-  description: Experience Section with heading, a description and a list of work experiences
+  description: Experience Section with heading, a description and a list of professional experiences
   icon: work
   tags:
     - Content
@@ -16,7 +15,7 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  title: Work Experience
+  title: Professional Experience
   description_html: ""
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
