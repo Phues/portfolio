@@ -1,4 +1,4 @@
-<section class="section education animate">
+<section class="section educations animate">
   <div class="container">
     <div class="row">
       <div class="col col-12">
@@ -11,9 +11,9 @@
           </div>
         </div>
 
-        {% if include.show_education %}
-        <div class="education__slider my-slider">
-          {% for education-item in site.education %}
+        {% if include.show_educations %}
+        <div class="educations__slider my-slider">
+          {% for education-item in site.educations %}
             {% bookshop education-card education-item=education-item %}
           {% endfor %}
         </div>
