@@ -30,6 +30,8 @@ collections:
     output: false
   educations:
     output: false
+  experiences:
+    output: false
   posts:
     output: true
     permalink: /blog/:slug

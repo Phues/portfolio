@@ -21,6 +21,9 @@
 
         {% if include.show_testimonials %}
         <div class="testimonials__slider my-slider">
+          <div class="testimonials__count">
+            <p>Total Testimonials: {{ site.testimonials | size }}</p>
+          </div>
           {% for testimonial-item in site.testimonials %}
             {% bookshop testimonial-card testimonial-item=testimonial-item %}
           {% endfor %}

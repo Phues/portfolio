@@ -1,0 +1,29 @@
+{% assign c = "c-work-card" %}
+
+<div class="{{c}}">
+  <div class="{{c}}__content">
+    <div class="{{c}}__image-container">
+      {% if include.experience-item.company_logo %}
+        <img src="{{ include.experience-item.company_logo }}" alt="{{ include.experience-item.company_name }}" class="{{c}}__company-logo">
+      {% else %}
+        <div class="{{c}}__placeholder-logo">{{ include.experience-item.company_name | slice: 0 }}</div>
+      {% endif %}
+    </div>
+    <div class="{{c}}__info-container">
+      <div class="{{c}}__company-info">
+        {% if include.experience-item.company_name %}
+          <h3 class="{{c}}__company-name">{{ include.experience-item.company_name }}</h3>
+        {% endif %}
+        {% if include.experience-item.job_title %}
+          <h4 class="{{c}}__job-title">{{ include.experience-item.job_title }}</h4>
+        {% endif %}
+        {% if include.experience-item.duration %}
+          <p class="{{c}}__duration">{{ include.experience-item.duration }}</p>
+        {% endif %}
+      </div>
+      {% if include.experience-item.description %}
+        <p class="{{c}}__job-description">{{ include.experience-item.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+</div>

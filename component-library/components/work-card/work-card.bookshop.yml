@@ -1,0 +1,28 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures: []
+  label: Work Card
+  description: Work card used for displaying job or work experience information
+  icon: work
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  work-item:
+    company_name: ""
+    company_logo: ""
+    job_title: ""
+    duration: ""
+    description: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  work-item:
+    company_name: Example Company
+    company_logo: https://placekitten.com/200/200
+    job_title: Software Engineer
+    duration: "2020 - Present"
+    description: "Developing and maintaining web applications using modern technologies. Collaborating with cross-functional teams to deliver high-quality software solutions."
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

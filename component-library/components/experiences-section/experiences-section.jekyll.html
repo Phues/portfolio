@@ -1,0 +1,28 @@
+<div class="section experiences animate">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="section__info">
+            <div class="section__head">
+              <h2 id="{{ include.title | slugify }}" class="section__title">{{ include.title }}</h2>
+            </div>
+            <div class="section__description">
+              {{ include.description_html }}
+            </div>
+          </div>
+  
+          {% if include.show_experiences %}
+            <div class="experiences__list">
+              {% for experience-item in site.experiences %}
+                <div class="experience-item">
+                  {% bookshop work-card experience-item=experience-item %}
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <p>Experiences are not shown (show_experiences is false)</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
