@@ -32,6 +32,8 @@ collections:
     output: false
   experiences:
     output: false
+  certificates: 
+    output: false
   posts:
     output: true
     permalink: /blog/:slug

@@ -1,0 +1,23 @@
+{% assign c = "c-certificates-card" %}
+
+<a href="{{ include.certificate-item.link }}" class="{{c}}" target="_blank" rel="noopener noreferrer">
+  <div class="{{c}}__content">
+    <div class="{{c}}__certificate-meta">
+      <div class="{{c}}__certificate-info">
+        {% if include.certificate-item.name %}
+          <h3 class="{{c}}__certificate-name">{{ include.certificate-item.name }}</h3>
+        {% endif %}
+        {% if include.certificate-item.issuer %}
+          <p class="{{c}}__certificate-issuer">{{ include.certificate-item.issuer }}</p>
+        {% endif %}
+        {% if include.certificate-item.when %}
+          <p class="{{c}}__certificate-date">{{ include.certificate-item.when }}</p>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if include.certificate-item.description %}
+      <p class="{{c}}__certificate-text">{{ include.certificate-item.description }}</p>
+    {% endif %}
+  </div>
+</a>
